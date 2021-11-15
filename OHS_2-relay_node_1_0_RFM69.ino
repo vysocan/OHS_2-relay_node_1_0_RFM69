@@ -232,7 +232,7 @@ void loop() {
   // Process radio data
   checkRadio();
 
-  // Send alive packet every SENSOR_DELAY
+  // Send sensor data packet every SENSOR_DELAY
   if ((unsigned long)(millis() - sensorMillis) > SENSOR_DELAY){
     sensorMillis = millis();    
     sendValue(0, (((float)analogRead(A7) * 0.003223)-0.5)*100); 
