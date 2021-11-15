@@ -38,7 +38,6 @@
 // Constants
 #define REG_LEN         21   // Size of one conf. element
 #define NODE_NAME_SIZE  16   // As defined in gateway
-#define ALARM_ZONES     9    // Fixed number by hardware
 // Pins
 #define RELAY_1         9
 #define RELAY_2         8
@@ -63,7 +62,6 @@ int8_t  res;
 uint8_t radioLength;
 uint8_t pos;
 uint8_t msg[REG_LEN+1];
-//uint8_t msg[25]; // We send sensor msg longer than reg. element size
 unsigned long sensorMillis;
 unsigned long aliveMillis;
 
